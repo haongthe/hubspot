@@ -13,7 +13,10 @@ def init():
     client = MongoClient('localhost', 27017)
     db = client.test3
 
-    mylist = [{'link_api' : 'https://api.hubapi.com/crm-pipelines/v1/pipelines/tickets', 'col' : 'get_pipelines'},
+    mylist =[{'link_api' : 'https://api.hubapi.com/contacts/v1/lists/all/contacts/all', 'col' : 'get_contact'},
+            {'link_api' : 'https://api.hubapi.com/companies/v2/companies/paged', 'col' : 'get_company'},
+            {'link_api' : 'https://api.hubapi.com/deals/v1/deal/paged?hapikey=demo', 'col' : 'get_deals'},
+            {'link_api' : 'https://api.hubapi.com/crm-pipelines/v1/pipelines/tickets', 'col' : 'get_pipelines'},
             {'link_api' : 'https://api.hubapi.com/content/api/v2/site-maps', 'col' : 'site_maps'},
             {'link_api' : 'https://api.hubapi.com/hubdb/api/v2/tables', 'col' : 'get_table'},
             {'link_api' : 'https://api.hubapi.com/marketing-emails/v1/emails', 'col' : 'get_mar_email'},
