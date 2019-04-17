@@ -34,7 +34,7 @@ def init():
 
 def main():
     init()
-    querystring = {"hapikey":"demo"}
+    querystring = {"hapikey":"0525e7b4-90e9-4e7a-a04c-22ef0de711ba"}
     for item in mylist:
         url = item['link_api']
         collection_name = item['col']
@@ -53,11 +53,11 @@ def main():
 
             if str(hasMore) == 'True' or str(hasmore) == 'True': 
                 querystring = {    
-                    "hapikey":"demo",
+                    "hapikey":"0525e7b4-90e9-4e7a-a04c-22ef0de711ba",
                     "offset" : offset
                 }
                 querystring_cts = {
-                    "hapikey":"demo",
+                    "hapikey":"0525e7b4-90e9-4e7a-a04c-22ef0de711ba",
                     "vidOffset" : offset_cts
                 }
                 if str(collection_name) == 'get_contacts':
@@ -84,4 +84,3 @@ def main():
                 break
 if __name__ == "__main__":
     main()
-
